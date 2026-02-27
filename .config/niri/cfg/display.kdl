@@ -20,6 +20,7 @@ output "HDMI-A-1" {
     position x=-2560 y=-300
 }
 
+    // Laptop Output
  output "eDP-1" {
     mode "2560x1600@165.002" // Set resolution and refresh rate
     scale 1.5 // No scaling (use 2 for HiDPI)
