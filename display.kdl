@@ -1,0 +1,27 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// You will have to remove "/-" and edit it before it takes effect.
+
+
+    // USB-C Output
+output "DP-2" {
+    mode "1920x1080@60"
+    scale 1
+    transform "normal"
+    position x=-1920 y=0
+}
+
+
+    // HDMI Output
+output "HDMI-A-1" {
+    mode "2560x1440@143.912"
+    scale 1
+    transform "normal"
+    position x=-2560 y=-300
+}
+
+ output "eDP-1" {
+    mode "2560x1600@165.002" // Set resolution and refresh rate
+    scale 1.5 // No scaling (use 2 for HiDPI)
+    variable-refresh-rate
+}
