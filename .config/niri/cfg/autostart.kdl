@@ -1,6 +1,4 @@
 // ────────────── Startup Applications ──────────────
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
-    spawn-sh-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &" // Polkit
     spawn-at-startup "qs" "-c" "noctalia-shell" "--no-duplicate"
     spawn-at-startup "swayidle" "-w" "before-sleep" "qs -c noctalia-shell ipc call lockScreen lock"
