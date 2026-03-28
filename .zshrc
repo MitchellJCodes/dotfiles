@@ -44,6 +44,7 @@ alias ll="eza -l --icons --color=never"
 alias la="eza -la --icons --color=never"
 alias yeet="paru -Rns"
 alias ..="cd .."
+alias ff="fastfetch"
 
 # ----- Functions -----
 Integrated() {
@@ -72,4 +73,3 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-bin-gem-node \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
-
