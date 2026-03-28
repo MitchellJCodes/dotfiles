@@ -18,6 +18,7 @@ binds {
     Mod+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
     Mod+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+Ctrl+Q                        hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+Ctrl+B                        hotkey-overlay-title="Toggle Bar: noctalia shell" { spawn-sh "qs -c noctalia-shell ipc call bar toggle"; }
 
 
 
