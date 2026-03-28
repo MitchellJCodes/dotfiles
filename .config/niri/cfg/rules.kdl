@@ -1,9 +1,33 @@
-    window-rule {
-        geometry-corner-radius 13 // Set every window radius to 13
+// Corner radius and boarder geometry
+window-rule {
+        geometry-corner-radius 13
         clip-to-geometry true
     }
 
-    layer-rule {
-        match namespace="^noctalia-overview*"
+
+
+// Make inactive windows semitransparent and enable blur
+window-rule {
+    match is-active=false
+    background-effect {
+	    blur true
+	}
+
+    opacity 0.80
+}
+
+// Enable noctalia in overview for static overview
+layer-rule {
+        match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
+
+
+    // Enable blur behind the kitty terminal.
+window-rule {
+    match app-id="^kitty$"
+ 
+    background-effect {
+        blur true
+    }
+}
