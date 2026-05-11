@@ -110,3 +110,4 @@ Integrated() {
 #  PATH (Optional — add your custom bin dirs here)
 # =====================================================================
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
