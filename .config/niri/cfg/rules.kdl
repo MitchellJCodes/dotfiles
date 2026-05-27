@@ -24,13 +24,6 @@ layer-rule {
     }
 
 
-// Noctalia: blur everywhere without xray for a better look */
-layer-rule {
-  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
-  background-effect {
-    xray false
-  }
-}
 
     // Enable blur behind the kitty terminal.
 window-rule {
@@ -40,4 +33,18 @@ window-rule {
         blur true
         xray false
     }
+}
+
+
+/*
+  Noctalia
+  Disable xray on all our surfaces so it looks more realistic.
+  No need to set blur to 'true' here, it's automatic.
+*/
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel)$"
+  background-effect {
+    xray false
+    //blur false
+  }
 }
