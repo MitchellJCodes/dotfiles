@@ -47,11 +47,6 @@ source ~/.local/share/zinit/zinit.git/zinit.zsh
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# =====================================================================
-#  COMPLETION SYSTEM
-# =====================================================================
-autoload -Uz compinit
-compinit -u
 
 # =====================================================================
 #  ZINIT PLUGINS (Turbo Mode)
@@ -84,6 +79,14 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
+
+# =====================================================================
+#  COMPLETION SYSTEM
+# =====================================================================
+autoload -Uz compinit
+compinit -u
+
+    
 # =====================================================================
 #  ALIASES
 # =====================================================================
