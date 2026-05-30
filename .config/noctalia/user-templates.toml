@@ -1,21 +1,132 @@
+[bar.default]
+background_opacity = 0.59999998658895493
+end = [ "tray", "notifications", "volume", "brightness", "battery", "control-center" ]
+margin_ends = 10.0
+start = [ "workspaces" ]
+
 [config]
 
-[templates]
+[desktop_widgets]
+schema_version = 1
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660
+
+    [idle.behavior.suspend]
+    action = "suspend"
+    enabled = true
+    lock_before_suspend = true
+    timeout = 900
+
+[nightlight]
+enabled = true
+
+[notification]
+background_opacity = 0.59999998658895493
+
+[osd]
+background_opacity = 0.59999998658895493
+
+[shell]
+avatar_path = "/home/mitch/.face.jpg"
+font_family = "Inter"
+password_style = "random"
+polkit_agent = true
+telemetry_enabled = true
+
+    [shell.panel]
+    open_near_click_control_center = true
+    open_near_click_launcher = true
+    transparency_mode = "glass"
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "suspend"
+    enabled = true
+    glyph = "suspend"
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl hibernate"
+    enabled = true
+    glyph = "zzz"
+    label = "Hibernate"
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    shortcut = "5"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    shortcut = "6"
+    variant = "destructive"
 
 [templates.nvim-base16]
 input_path = "~/.config/nvim/lua/matugen-template.lua"
 output_path = "~/.config/nvim/lua/matugen.lua"
-post_hook = 'pkill -SIGUSR1 nvim'
+post_hook = "pkill -SIGUSR1 nvim"
 
-# User-defined templates
-# Add your custom templates below
-# Example:
-# [templates.myapp]
-# input_path = "~/.config/noctalia/templates/myapp.css"
-# output_path = "~/.config/myapp/theme.css"
-# post_hook = "myapp --reload-theme"
+[theme]
+source = "wallpaper"
 
-# Remove this section and add your own templates
-#[templates.placeholder]
-#input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/Templates/noctalia.json"
-#output_path = "/home/mitch/.cache/noctalia/placeholder.json"
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "helix", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
+    community_ids = [ "pywalfox", "yazi" ]
+
+[wallpaper]
+directory = "/home/mitch/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+
+    [wallpaper.last]
+    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+
+[weather]
+auto_locate = true
+unit = "imperial"
+
+[widget.control-center]
+glyph = "power"
