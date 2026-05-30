@@ -6,7 +6,6 @@ eval "$(starship init zsh)"
 # =====================================================================
 #  BASIC OPTIONS
 # =====================================================================
-fastfetch
 setopt NO_BEEP
 setopt autocd
 setopt interactive_comments
