@@ -26,6 +26,7 @@ layer-rule {
 
 
 
+
     // Enable blur behind the kitty terminal.
 window-rule {
     match app-id="^kitty$"
@@ -33,6 +34,27 @@ window-rule {
     background-effect {
         blur true
         xray false
+    }
+}
+
+
+// Enable blur behind the Alacritty terminal.
+window-rule {
+    match app-id="^Alacritty$"
+
+    background-effect {
+        blur true
+    }
+}
+
+
+
+// Enable blur behind the Ghostty terminal.
+window-rule {
+    match app-id="ghostty"
+
+    background-effect {
+        blur true
     }
 }
 
