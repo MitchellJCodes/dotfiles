@@ -8,8 +8,3 @@ y = 10
 [font]
 normal = { family = "FiraCode Nerd Font Mono" }
 size = 13.0
-
-[general]
-import = [
-    "~/.config/alacritty/themes/noctalia.toml"
-]
