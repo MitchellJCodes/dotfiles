@@ -1,1 +1,4 @@
 theme = "noctalia"
+
+[editor]
+default-yank-register = "+"
