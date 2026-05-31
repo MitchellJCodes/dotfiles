@@ -1,0 +1,10 @@
+background-opacity = 0.8
+window-padding-x = 10
+window-padding-y = 10
+
+font-family = "FiraCode Nerd Font Mono"
+font-size = 13
+confirm-close-surface = false
+
+
+theme = noctalia
