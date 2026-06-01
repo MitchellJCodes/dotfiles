@@ -12,7 +12,7 @@
 
 	
 	focus-ring{
-	width 1 // Focus ring width around active window
+	width 2 // Focus ring width around active window
 	}
 
 	    // You can enable drop shadows for windows.
