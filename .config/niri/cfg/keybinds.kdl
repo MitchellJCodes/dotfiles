@@ -11,7 +11,7 @@ binds {
 
 
     // ─── Applications ───
-    Mod+Return                          hotkey-overlay-title="Open Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Return                          hotkey-overlay-title="Open Terminal: Ghostty" { spawn "Ghostty"; }
     Mod+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
