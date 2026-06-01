@@ -106,23 +106,26 @@ post_hook = "pkill -SIGUSR1 nvim"
 source = "wallpaper"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "helix", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "helix", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "pywalfox", "yazi" ]
 
 [wallpaper]
 directory = "/home/mitch/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/0001.png"
 
     [wallpaper.last]
-    path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/0001.png"
 
     [wallpaper.monitors.DP-1]
     path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
 
     [wallpaper.monitors.DP-2]
     path = "/home/mitch/Pictures/Wallpapers/Rock on, Milky Way!.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/mitch/Pictures/Wallpapers/0001.png"
 
 [weather]
 auto_locate = true
