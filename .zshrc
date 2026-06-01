@@ -9,6 +9,9 @@ eval "$(starship init zsh)"
 setopt NO_BEEP
 setopt autocd
 setopt interactive_comments
+export EDITOR=helix
+export VISUAL=helix
+
 
 # Completion matching (case-insensitive)
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
