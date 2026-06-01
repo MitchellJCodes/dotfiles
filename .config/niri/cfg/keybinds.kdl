@@ -20,6 +20,8 @@ binds {
     Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Shift+W { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     Mod+CTRL+W { spawn-sh "noctalia msg wallpaper-random"; }
+    Mod+CTRL+Q { spawn-sh "noctalia msg panel-toggle session"; }
+
 
 
 
