@@ -40,6 +40,7 @@ binds {
     // ─── Window Movement and Focus ───
     Mod+Q                               { close-window; }
 
+
     Mod+Left                            { focus-column-or-monitor-left; }
     Mod+H                               { focus-column-or-monitor-left; }
     Mod+Right                           { focus-column-or-monitor-right; }
@@ -48,6 +49,7 @@ binds {
     Mod+K                               { focus-window-or-workspace-up; }
     Mod+Down                            { focus-window-or-workspace-down; }
     Mod+J                               { focus-window-or-workspace-down; }
+
 
     Mod+shift+Left                       { move-column-left-or-to-monitor-left; }
     Mod+shift+H                          { move-column-left-or-to-monitor-left; }
@@ -58,6 +60,17 @@ binds {
     Mod+shift+Down                       { move-window-down-or-to-workspace-down; }
     Mod+shift+J                          { move-window-down-or-to-workspace-down; }
 
+
+    Mod+CTRL+Left                            { move-column-to-monitor-left; }
+    Mod+CTRL+H                               { move-column-to-monitor-left; }
+    Mod+CTRL+Right                           { move-column-to-monitor-right; }
+    Mod+CTRL+L                               { move-column-to-monitor-right; }
+    Mod+CTRL+Up                              { move-column-to-workspace-up; }
+    Mod+CTRL+K                               { move-column-to-workspace-up; }
+    Mod+CTRL+Down                            { move-column-to-workspace-down; }
+    Mod+CTRL+J                               { move-column-to-workspace-down; }
+
+    
     Mod+Home                            { focus-column-first; }
     Mod+End                             { focus-column-last; }
     Mod+CTRL+Home                       { move-column-to-first; }
