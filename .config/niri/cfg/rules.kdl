@@ -26,7 +26,6 @@ layer-rule {
 
 
 
-
     // Enable blur behind the kitty terminal.
 window-rule {
     match app-id="^kitty$"
@@ -60,6 +59,20 @@ window-rule {
 
 
 
+
+
+// Enable blur behind the Zed editor.
+window-rule {
+    match app-id="dev.zed.Zed"
+
+    background-effect {
+        blur true
+    }
+}
+
+
+
+
 // Floating Shushi  window.
 window-rule {
   match app-id="^org.gnome.NautilusPreviewer$"
@@ -68,6 +81,15 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
+
+
+// Floating Localsend  window.
+window-rule {
+  match app-id="^localsend$"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
 
 
 /*
