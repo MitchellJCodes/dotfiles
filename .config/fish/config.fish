@@ -18,6 +18,6 @@ end
 
 if status is-login
     if test (tty) = /dev/tty1
-        exec niri
+        exec niri-session -l
     end
 end
