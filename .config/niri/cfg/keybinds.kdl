@@ -61,22 +61,32 @@ binds {
     Mod+shift+J                          { move-window-down-or-to-workspace-down; }
 
 
-    Mod+CTRL+Left                            { move-column-to-monitor-left; }
-    Mod+CTRL+H                               { move-column-to-monitor-left; }
-    Mod+CTRL+Right                           { move-column-to-monitor-right; }
-    Mod+CTRL+L                               { move-column-to-monitor-right; }
-    Mod+CTRL+Up                              { move-column-to-workspace-up; }
-    Mod+CTRL+K                               { move-column-to-workspace-up; }
-    Mod+CTRL+Down                            { move-column-to-workspace-down; }
-    Mod+CTRL+J                               { move-column-to-workspace-down; }
+    Mod+CTRL+Left                            { focus-monitor-left; }
+    Mod+CTRL+H                               { focus-monitor-left; }
+    Mod+CTRL+Right                           { focus-monitor-right; }
+    Mod+CTRL+L                               { focus-monitor-right; }
+    Mod+CTRL+Up                              { focus-workspace-up; }
+    Mod+CTRL+K                               { focus-workspace-up; }
+    Mod+CTRL+Down                            { focus-workspace-down; }
+    Mod+CTRL+J                               { focus-workspace-down; }
 
-    
+
+    Mod+shift+CTRL+Left                            { move-column-to-monitor-left; }
+    Mod+shift+CTRL+H                               { move-column-to-monitor-left; }
+    Mod+shift+CTRL+Right                           { move-column-to-monitor-right; }
+    Mod+shift+CTRL+L                               { move-column-to-monitor-right; }
+    Mod+shift+CTRL+Up                              { move-column-to-workspace-up; }
+    Mod+shift+CTRL+K                               { move-column-to-workspace-up; }
+    Mod+shift+CTRL+Down                            { move-column-to-workspace-down; }
+    Mod+shift+CTRL+J                               { move-column-to-workspace-down; }
+
+
     Mod+Home                            { focus-column-first; }
     Mod+End                             { focus-column-last; }
     Mod+CTRL+Home                       { move-column-to-first; }
     Mod+CTRL+End                        { move-column-to-last; }
 
-    
+
     // ─── Workspace Switching ───
     Mod+WheelScrollDown                 cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp                   cooldown-ms=150 { focus-workspace-up; }
