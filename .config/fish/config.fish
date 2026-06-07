@@ -10,6 +10,7 @@ if status is-interactive
     alias ff fastfetch
 end
 
+set -gx EDITOR helix
 set -g fish_greeting
 
 if status is-interactive
@@ -21,3 +22,5 @@ if status is-login
         exec niri-session -l
     end
 end
+
+zoxide init fish | source
