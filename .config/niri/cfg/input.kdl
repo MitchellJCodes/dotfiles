@@ -5,7 +5,7 @@ input {
         xkb {
             layout "us" // Use the American keyboard layout
         }
-        numlock // Enable numlock on startup
+        //numlock // Enable numlock on startup
     }
 
     touchpad {
