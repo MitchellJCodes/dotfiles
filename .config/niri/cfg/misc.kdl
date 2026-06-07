@@ -19,3 +19,9 @@
     xcursor-theme "Bibata-Modern-Ice"
     xcursor-size 24
 }
+
+
+    switch-events {
+        lid-close { spawn "noctalia" "msg" "session" "lock"; }
+    }
+
