@@ -1,3 +1,4 @@
+fastfetch
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
@@ -8,10 +9,16 @@ if status is-interactive
     alias yeet "paru -Rns"
     alias .. "cd .."
     alias ff fastfetch
+    alias helix hx
+
+    alias nixswitch "sudo nix flake update; nixos-rebuild switch"
+    alias nixedit "sudoedit /etc/nixos/configuration.nix"
 end
 
 set -gx EDITOR helix
 set -g fish_greeting
+
+export EDITOR="hx"
 
 if status is-interactive
     starship init fish | source
