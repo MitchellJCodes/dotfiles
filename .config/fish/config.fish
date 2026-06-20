@@ -16,11 +16,3 @@ set -g fish_greeting
 if status is-interactive
     starship init fish | source
 end
-
-if status is-login
-    if test (tty) = /dev/tty1
-        exec niri-session -l
-    end
-end
-
-zoxide init fish | source
