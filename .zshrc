@@ -103,14 +103,7 @@ alias ff="fastfetch"
 # =====================================================================
 #  FUNCTIONS
 # =====================================================================
-Integrated() {
-    if supergfxctl -m Integrated; then
-        echo "Switch successful — logging out..."
-        loginctl terminate-session "$XDG_SESSION_ID"
-    else
-        echo "supergfxctl failed — not logging out."
-    fi
-}
+
 
 # =====================================================================
 #  PATH (Optional — add your custom bin dirs here)
