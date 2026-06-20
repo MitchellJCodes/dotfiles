@@ -99,6 +99,9 @@ alias la="eza -la --icons --color=never"
 alias yeet="paru -Rns"
 alias ..="cd .."
 alias ff="fastfetch"
+alias helix hx
+alias nixswitch "sudo nixos-rebuild switch"
+alias nixedit "sudoedit /etc/nixos/configuration.nix"
 
 # =====================================================================
 #  FUNCTIONS
