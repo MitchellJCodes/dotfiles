@@ -12,6 +12,8 @@ if status is-interactive
 
     alias nixswitch "sudo nix flake update; nixos-rebuild switch"
     alias nixedit "sudoedit /etc/nixos/configuration.nix"
+    alias nixlist "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
+    alias nixgc "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations old && sudo nix-collect-garbage -d"
 end
 
 set -gx EDITOR helix
