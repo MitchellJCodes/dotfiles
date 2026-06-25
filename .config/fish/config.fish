@@ -16,7 +16,7 @@ if status is-interactive
     alias nixgc "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations old && sudo nix-collect-garbage -d"
 end
 
-set -gx EDITOR helix
+set -gx EDITOR hx
 set -g fish_greeting
 
 export EDITOR="hx"
