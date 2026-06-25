@@ -9,8 +9,8 @@ eval "$(starship init zsh)"
 setopt NO_BEEP
 setopt autocd
 setopt interactive_comments
-export EDITOR=helix
-export VISUAL=helix
+export EDITOR=hx
+export VISUAL=hx
 
 
 # Completion matching (case-insensitive)
