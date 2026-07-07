@@ -88,7 +88,7 @@ window-rule {
 
 // Floating Localsend  window.
 window-rule {
-  match app-id="^localsend$"
+  match app-id="^localsend_app$"
   open-floating true
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
