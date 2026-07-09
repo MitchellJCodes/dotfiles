@@ -4,7 +4,7 @@
 
 
     // USB-C Output
-output "DP-2" {
+/-output "DP-2" {
     mode "1920x1080@60"
     scale 1
     transform "normal"
@@ -13,7 +13,7 @@ output "DP-2" {
 
 
     // HDMI Output
-output "HDMI-A-1" {
+/-output "HDMI-A-1" {
     mode "2560x1440@143.912"
     scale 1
     transform "normal"
@@ -21,7 +21,7 @@ output "HDMI-A-1" {
 }
 
     // Laptop Output
- output "eDP-1" {
+ /-output "eDP-1" {
     mode "2560x1600@165.002" // Set resolution and refresh rate
     scale 1.5 // No scaling (use 2 for HiDPI)
     variable-refresh-rate
