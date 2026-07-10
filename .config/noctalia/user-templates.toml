@@ -41,8 +41,9 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
 auto_locate = true
 
 [lockscreen_widgets]
+enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -83,6 +84,40 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
         input_radius = 6.0
         show_login_button = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 854.0
+    cy = 948.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-2"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 854.0
+    cy = 948.0
+    output = "eDP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
 [nightlight]
 enabled = true
 
@@ -109,18 +144,21 @@ telemetry_enabled = true
 
     [[shell.session.actions]]
     action = "lock"
+    countdown_seconds = 0.0
     enabled = true
     shortcut = "1"
     variant = "default"
 
     [[shell.session.actions]]
     action = "logout"
+    countdown_seconds = 0.0
     enabled = true
     shortcut = "2"
     variant = "default"
 
     [[shell.session.actions]]
-    action = "suspend"
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
     enabled = true
     glyph = "suspend"
     shortcut = "3"
@@ -128,12 +166,14 @@ telemetry_enabled = true
 
     [[shell.session.actions]]
     action = "reboot"
+    countdown_seconds = 0.0
     enabled = true
     shortcut = "4"
     variant = "default"
 
     [[shell.session.actions]]
     action = "shutdown"
+    countdown_seconds = 0.0
     enabled = true
     shortcut = "5"
     variant = "destructive"
@@ -158,10 +198,10 @@ wallpaper_scheme = "m3-content"
 directory = "/home/mitch/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
 
     [wallpaper.monitors.DP-1]
     path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
@@ -170,7 +210,10 @@ directory = "/home/mitch/Pictures/Wallpapers"
     path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/mitch/Pictures/Wallpapers/0001.png"
+    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
+
+    [wallpaper.monitors.eDP-2]
+    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
 
 [weather]
 auto_locate = true
