@@ -6,7 +6,4 @@ font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 13
 confirm-close-surface = false
 
-custom-shader = shaders/cursor_tail.glsl
-custom-shader-animation = always
-
 theme = noctalia
