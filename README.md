@@ -1,4 +1,4 @@
-## For use with my NixOS Configuration
+## In use with my NixOS Configuration
 
 <img width="2560" height="1440" alt="Desktop preview" src="https://github.com/user-attachments/assets/3c198471-18dc-4b1b-8ab8-f340b32e5f8a" />
 
