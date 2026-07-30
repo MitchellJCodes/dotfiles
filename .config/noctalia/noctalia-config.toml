@@ -43,7 +43,12 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
+widget_order = [
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@eDP-2"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -63,8 +68,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
@@ -80,8 +88,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
@@ -97,8 +108,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-2"]
@@ -114,8 +128,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
 
 [nightlight]
@@ -132,7 +149,7 @@ enabled = []
 
 [shell]
 avatar_path = "/home/mitch/.face.jpg"
-font_family = "Inter"
+font_family = "Adwaita Sans"
 password_style = "random"
 polkit_agent = true
 telemetry_enabled = true
@@ -192,16 +209,16 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "helix", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "pywalfox", "zed", "yazi" ]
+    community_ids = [ "pywalfox", "zed", "papirus-icons", "yazi" ]
 
 [wallpaper]
 directory = "/home/mitch/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
 
     [wallpaper.monitors.DP-1]
     path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
