@@ -10,12 +10,12 @@ if status is-interactive
     alias ff fastfetch
     alias helix hx
 
-    alias nixlist "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
-    alias nixgc "sudo nix-collect-garbage -d"
+    alias nix-list "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
+    alias nix-gc "sudo nix-collect-garbage -d"
 end
 
 # update nix
-function nixupdate
+function nix-update
     sudo nix flake update --flake /etc/nixos
     and sudo nixos-rebuild switch --flake /etc/nixos#(hostname)
 end
