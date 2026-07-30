@@ -13,16 +13,18 @@ binds {
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
     Mod+B                               hotkey-overlay-title="Open Browser: Firefox" { spawn "firefox"; }
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
-    Mod+CTRL+B { spawn-sh "noctalia msg bar-toggle"; }
-    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
-    Mod+Shift+W { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Mod+Shift+E { spawn-sh "noctalia msg panel-toggle launcher /emo"; }
-    Mod+CTRL+W { spawn-sh "noctalia msg wallpaper-random"; }
-    Mod+CTRL+Q { spawn-sh "noctalia msg panel-toggle session"; }
-   
+
+    Mod+Space      hotkey-overlay-title="Launcher: Toggle Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S          hotkey-overlay-title="Panel: Toggle Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Comma      hotkey-overlay-title="Settings: Toggle Settings" { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+CTRL+B     hotkey-overlay-title="Panel: Toggle Top Bar" { spawn-sh "noctalia msg bar-toggle"; }
+    Mod+V          hotkey-overlay-title="Panel: Toggle Clipboard History" { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Shift+W    hotkey-overlay-title="Wallpaper: Open Wallpaper Picker" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
+    Mod+Shift+E    hotkey-overlay-title="Launcher: Emoji Picker" { spawn-sh "noctalia msg panel-toggle launcher /emo"; }
+    Mod+CTRL+W     hotkey-overlay-title="Wallpaper: Random Wallpaper" { spawn-sh "noctalia msg wallpaper-random"; }
+    Mod+CTRL+Q     hotkey-overlay-title="Session: Open Power Menu" { spawn-sh "noctalia msg panel-toggle session"; }
+
+  
     // Please choose your own file manager.
     Mod+E                               hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
