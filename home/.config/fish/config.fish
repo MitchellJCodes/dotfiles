@@ -16,6 +16,13 @@ end
 
 # update nix
 function nix-update
+    argparse dotfiles -- $argv
+    or return
+
+    if set -q _flag_dotfiles
+        rm -f ~/.dotfiles-installed
+    end
+
     sudo nix flake update --flake /etc/nixos
     and sudo nixos-rebuild switch --flake /etc/nixos#(hostname)
 end
