@@ -208,29 +208,27 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "helix", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [
+        "alacritty",
+        "btop",
+        "cava",
+        "gtk3",
+        "gtk4",
+        "ghostty",
+        "helix",
+        "kcolorscheme",
+        "kitty",
+        "niri",
+        "qt",
+        "starship"
+    ]
     community_ids = [ "pywalfox", "zed", "papirus-icons", "yazi" ]
 
 [wallpaper]
-directory = "/home/mitch/Pictures/Wallpapers"
+directory = "/home/mitch/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
-
-    [wallpaper.last]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
-
-    [wallpaper.monitors.DP-1]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
-
-    [wallpaper.monitors.DP-2]
-    path = "/home/mitch/Pictures/Wallpapers/wallhaven-8grlyj.jpg"
-
-    [wallpaper.monitors.eDP-1]
-    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
-
-    [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/Pictures/Wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/.config/wallpapers/Twists and turns of Mount Hamilton.jpg"
 
 [weather]
 auto_locate = true
