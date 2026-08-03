@@ -19,7 +19,7 @@ rm -rf ~/.config
 3. Copy new dotfiles:
 
 ```sh
-cp -r dotfiles/.config ~
+cp -r dotfiles/home/.config ~
 ```
 
 Enjoy!
