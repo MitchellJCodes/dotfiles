@@ -9,6 +9,9 @@ if status is-interactive
     alias .. "cd .."
     alias ff fastfetch
     alias helix hx
+    alias vim hx
+    alias nvim hx
+    alias neovim hx
 
     alias nix-list "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
     alias nix-gc "sudo nix-collect-garbage -d"
