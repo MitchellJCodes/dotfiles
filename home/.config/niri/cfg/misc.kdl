@@ -16,9 +16,9 @@
     }
 
     cursor {
-    xcursor-theme "Bibata-Modern-Ice"
-    xcursor-size 24
-}
+        xcursor-theme "Bibata-Modern-Ice"
+        xcursor-size 24
+    }
 
 
     switch-events {
