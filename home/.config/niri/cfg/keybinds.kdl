@@ -57,36 +57,38 @@ binds {
     Mod+J                               { focus-window-or-workspace-down; }
 
 
-    Mod+shift+Left                       { move-column-left-or-to-monitor-left; }
-    Mod+shift+H                          { move-column-left-or-to-monitor-left; }
-    Mod+shift+Right                      { move-column-right-or-to-monitor-right; }
-    Mod+shift+L                          { move-column-right-or-to-monitor-right; }
-    Mod+shift+UP                         { move-window-up-or-to-workspace-up; }
-    Mod+shift+K                          { move-window-up-or-to-workspace-up; }
-    Mod+shift+Down                       { move-window-down-or-to-workspace-down; }
-    Mod+shift+J                          { move-window-down-or-to-workspace-down; }
+    Mod+shift+Left                      { move-column-left-or-to-monitor-left; }
+    Mod+shift+H                         { move-column-left-or-to-monitor-left; }
+    Mod+shift+Right                     { move-column-right-or-to-monitor-right; }
+    Mod+shift+L                         { move-column-right-or-to-monitor-right; }
+    Mod+shift+UP                        { move-window-up-or-to-workspace-up; }
+    Mod+shift+K                         { move-window-up-or-to-workspace-up; }
+    Mod+shift+Down                      { move-window-down-or-to-workspace-down; }
+    Mod+shift+J                         { move-window-down-or-to-workspace-down; }
 
 
-    Mod+CTRL+Left                            { focus-monitor-left; }
-    Mod+CTRL+H                               { focus-monitor-left; }
-    Mod+CTRL+Right                           { focus-monitor-right; }
-    Mod+CTRL+L                               { focus-monitor-right; }
-    Mod+CTRL+Up                              { focus-workspace-up; }
-    Mod+CTRL+K                               { focus-workspace-up; }
-    Mod+CTRL+Down                            { focus-workspace-down; }
-    Mod+CTRL+J                               { focus-workspace-down; }
+    Mod+CTRL+Left                       { focus-monitor-left; }
+    Mod+CTRL+H                          { focus-monitor-left; }
+    Mod+CTRL+Right                      { focus-monitor-right; }
+    Mod+CTRL+L                          { focus-monitor-right; }
+    Mod+CTRL+Up                         { focus-workspace-up; }
+    Mod+CTRL+K                          { focus-workspace-up; }
+    Mod+CTRL+Down                       { focus-workspace-down; }
+    Mod+CTRL+J                          { focus-workspace-down; }
 
 
-    Mod+shift+CTRL+Left                            { move-column-to-monitor-left; }
-    Mod+shift+CTRL+H                               { move-column-to-monitor-left; }
-    Mod+shift+CTRL+Right                           { move-column-to-monitor-right; }
-    Mod+shift+CTRL+L                               { move-column-to-monitor-right; }
-    Mod+shift+CTRL+Up                              { move-column-to-workspace-up; }
-    Mod+shift+CTRL+K                               { move-column-to-workspace-up; }
-    Mod+shift+CTRL+Down                            { move-column-to-workspace-down; }
-    Mod+shift+CTRL+J                               { move-column-to-workspace-down; }
-
-
+    Mod+shift+CTRL+Left                 { move-column-to-monitor-left; }
+    Mod+shift+CTRL+H                    { move-column-to-monitor-left; }
+    Mod+shift+CTRL+Right                { move-column-to-monitor-right; }
+    Mod+shift+CTRL+L                    { move-column-to-monitor-right; }
+    Mod+shift+CTRL+Up                   { move-column-to-workspace-up; }
+    Mod+shift+CTRL+K                    { move-column-to-workspace-up; }
+    Mod+shift+CTRL+Down                 { move-column-to-workspace-down; }
+    Mod+shift+CTRL+J                    { move-column-to-workspace-down; }
+    
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+    
     Mod+Home                            { focus-column-first; }
     Mod+End                             { focus-column-last; }
     Mod+CTRL+Home                       { move-column-to-first; }
@@ -119,15 +121,15 @@ binds {
     Mod+8                               { focus-workspace 8; }
     Mod+9                               { focus-workspace 9; }
 
-    Mod+shift+1                          { move-column-to-workspace 1; }
-    Mod+shift+2                          { move-column-to-workspace 2; }
-    Mod+shift+3                          { move-column-to-workspace 3; }
-    Mod+shift+4                          { move-column-to-workspace 4; }
-    Mod+shift+5                          { move-column-to-workspace 5; }
-    Mod+shift+6                          { move-column-to-workspace 6; }
-    Mod+shift+7                          { move-column-to-workspace 7; }
-    Mod+shift+8                          { move-column-to-workspace 8; }
-    Mod+shift+9                          { move-column-to-workspace 9; }
+    Mod+shift+1                         { move-column-to-workspace 1; }
+    Mod+shift+2                         { move-column-to-workspace 2; }
+    Mod+shift+3                         { move-column-to-workspace 3; }
+    Mod+shift+4                         { move-column-to-workspace 4; }
+    Mod+shift+5                         { move-column-to-workspace 5; }
+    Mod+shift+6                         { move-column-to-workspace 6; }
+    Mod+shift+7                         { move-column-to-workspace 7; }
+    Mod+shift+8                         { move-column-to-workspace 8; }
+    Mod+shift+9                         { move-column-to-workspace 9; }
 
 //    Mod+TAB                             { focus-workspace-previous; }
 
@@ -142,8 +144,9 @@ binds {
 
     // ─── Modes ───
     Mod+T                               { toggle-window-floating; }
-    Mod+Shift+F                               { fullscreen-window; }
-    Mod+F                                       { maximize-column; }
+    Mod+Shift+T                         { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+F                         { fullscreen-window; }
+    Mod+F                               { maximize-column; }
     Mod+W                               { toggle-column-tabbed-display; }
 
     Mod+R { switch-preset-column-width; }
