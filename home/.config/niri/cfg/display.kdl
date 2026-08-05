@@ -2,6 +2,13 @@
 // You can run `niri msg outputs` to get the correct name for your displays.
 // You will have to remove "/-" and edit it before it takes effect.
 
+    // Laptop Output
+ output "eDP-2" {
+    mode "2560x1600@165.002" // Set resolution and refresh rate
+    scale 1.5 // No scaling (use 2 for HiDPI)
+    variable-refresh-rate
+    position x=0 y=0
+}
 
     // USB-C Output
 /-output "DP-2" {
@@ -20,16 +27,8 @@
     position x=-2560 y=-300
 }
 
-    // Laptop Output
- /-output "eDP-2" {
-    mode "2560x1600@165.002" // Set resolution and refresh rate
-    scale 1.5 // No scaling (use 2 for HiDPI)
-    variable-refresh-rate
-    position x=0 y=0
-}
-
     // Display Port Output
-/-output "DP-1" {
+output "DP-1" {
     mode "2560x1440@143.912"
     scale 1
     transform "normal"
@@ -37,7 +36,7 @@
 }
 
     // Display Port Output
-/-output "DP-2" {
+output "DP-2" {
     mode "1920x1080@165.002"
     scale 1
     transform "normal"
