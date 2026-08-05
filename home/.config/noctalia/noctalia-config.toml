@@ -43,7 +43,12 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
+widget_order = [
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@eDP-2"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -144,7 +149,6 @@ enabled = []
 
 [shell]
 app_icon_color = "primary"
-app_icon_colorize = true
 avatar_path = "/home/mitch/.face.jpg"
 font_family = "Adwaita Sans"
 password_style = "random"
@@ -219,7 +223,7 @@ wallpaper_scheme = "m3-content"
         "qt",
         "starship"
     ]
-    community_ids = [ "pywalfox", "zed", "papirus-icons", "yazi" ]
+    community_ids = [ "pywalfox", "zed", "obs", "papirus-icons", "yazi" ]
 
 [wallpaper]
 directory = "/home/mitch/.config/wallpapers"
