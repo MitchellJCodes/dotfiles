@@ -43,12 +43,7 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [
-    "lockscreen-login-box@DP-2",
-    "lockscreen-login-box@DP-1",
-    "lockscreen-login-box@eDP-1",
-    "lockscreen-login-box@eDP-2"
-]
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -148,6 +143,8 @@ background_opacity = 0.59999998658895493
 enabled = []
 
 [shell]
+app_icon_color = "primary"
+app_icon_colorize = true
 avatar_path = "/home/mitch/.face.jpg"
 font_family = "Adwaita Sans"
 password_style = "random"
@@ -228,6 +225,9 @@ wallpaper_scheme = "m3-content"
 directory = "/home/mitch/.config/wallpapers"
 
     [wallpaper.default]
+    path = "/home/mitch/.config/wallpapers/Twists and turns of Mount Hamilton.jpg"
+
+    [wallpaper.last]
     path = "/home/mitch/.config/wallpapers/Twists and turns of Mount Hamilton.jpg"
 
 [weather]
