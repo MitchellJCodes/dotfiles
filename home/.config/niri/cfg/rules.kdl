@@ -5,8 +5,6 @@ window-rule {
         draw-border-with-background false
     }
 
-
-
 // Make inactive windows semitransparent and enable blur
 window-rule {
     match is-active=false
@@ -36,7 +34,6 @@ window-rule {
     }
 }
 
-
 // Enable blur behind the Alacritty terminal.
 window-rule {
     match app-id="^Alacritty$"
@@ -46,8 +43,6 @@ window-rule {
         xray false
     }
 }
-
-
 
 // Enable blur behind the Ghostty terminal.
 window-rule {
@@ -59,10 +54,6 @@ window-rule {
     }
 }
 
-
-
-
-
 // Enable blur behind the Zed editor.
 window-rule {
     match app-id="dev.zed.Zed"
@@ -73,9 +64,6 @@ window-rule {
     }
 }
 
-
-
-
 // Floating Shushi  window.
 window-rule {
   match app-id="^org.gnome.NautilusPreviewer$"
@@ -83,8 +71,6 @@ window-rule {
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
 }
-
-
 
 // Floating Localsend  window.
 window-rule {
@@ -94,20 +80,27 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
-
 /*
   Noctalia
   Disable xray on all our surfaces so it looks more realistic.
-  No need to set blur to 'true' here, it's automatic.
+  Noctalia publishes blur regions automatically when ext-background-effects is available.
 */
 layer-rule {
-  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|osd)$"
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
   background-effect {
     xray false
-    //blur false
+    // blur false
   }
 }
 
+/* Enable blur on noctalia's window switcher and disable xray. */
+layer-rule {
+    match namespace="noctalia-window-switcher"
+    background-effect {
+        blur true
+        xray false
+    }
+}
 
 // Floating Noctalia settings window.
 window-rule {
