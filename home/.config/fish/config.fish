@@ -1,6 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    alias cd "z"
+
     alias ls "eza --icons --color=never"
     alias ll "eza -l --icons --color=never"
     alias la "eza -la --icons --color=never"
