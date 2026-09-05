@@ -44,8 +44,8 @@ honor_restored_maximize = false                 # Honor restored maximized state
 # Documentation: https://docs.noctalia.dev/umbriel/configuration/#environment
 
 [environment]
- GTK_THEME = "Adwaita:dark"
- QT_QPA_PLATFORMTHEME = "qt5ct"
+# GTK_THEME = "Adwaita:dark"
+# QT_QPA_PLATFORMTHEME = "qt5ct"
 
 # Hardware events
 # These commands run when a laptop lid opens or closes. Uncomment either hook
