@@ -10,6 +10,8 @@ binds {
     // ─── Applications ───
     Mod+Return     hotkey-overlay-title="Open Terminal: Ghostty"                { spawn "ghostty"; }
     Mod+B          hotkey-overlay-title="Open Browser: Firefox"                 { spawn "firefox"; }
+    Mod+Shift+B    hotkey-overlay-title="Open Browser: Firefox Private"         { spawn "firefox" "-private-window"; }
+
 
     Mod+Space      hotkey-overlay-title="Launcher: Toggle Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S          hotkey-overlay-title="Panel: Toggle Control Center"          { spawn-sh "noctalia msg panel-toggle control-center"; }
@@ -20,7 +22,7 @@ binds {
     Mod+Shift+E    hotkey-overlay-title="Launcher: Emoji Picker"                { spawn-sh "noctalia msg panel-toggle launcher /emo"; }
     Mod+CTRL+W     hotkey-overlay-title="Wallpaper: Random Wallpaper"           { spawn-sh "noctalia msg wallpaper-random"; }
     Mod+CTRL+Q     hotkey-overlay-title="Session: Open Power Menu"              { spawn-sh "noctalia msg panel-toggle session"; }
-  
+      
     // Please choose your own file manager.
     Mod+E          hotkey-overlay-title="File Manager: Nautilus"                { spawn "nautilus"; }
 
@@ -136,6 +138,7 @@ binds {
     Mod+Shift+T                         { switch-focus-between-floating-and-tiling; }
     Mod+Shift+F                         { fullscreen-window; }
     Mod+F                               { maximize-column; }
+    Mod+M                               { maximize-window-to-edges; }
     Mod+W                               { toggle-column-tabbed-display; }
 
     Mod+R { switch-preset-column-width; }
