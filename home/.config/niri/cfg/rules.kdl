@@ -8,13 +8,24 @@ window-rule {
 // Make inactive windows semitransparent and enable blur
 window-rule {
     match is-active=false
-    background-effect {
-	  	blur true
-      	xray false
-	}
+ //    background-effect {
+	//   	blur true
+ //      	xray false
+	// }
 
     opacity 0.80
 }
+
+
+// Enable blur for all windows
+window-rule {
+    match app-id=".*"
+
+    background-effect {
+        blur true
+        xray false
+	    }
+	}
 
 // Enable noctalia in overview for static overview
 layer-rule {
@@ -22,59 +33,41 @@ layer-rule {
         place-within-backdrop true
     }
 
-
-
-    // Enable blur behind the kitty terminal.
-window-rule {
-    match app-id="^kitty$"
- 
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-// Enable blur behind the Alacritty terminal.
-window-rule {
-    match app-id="^Alacritty$"
-
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-// Enable blur behind the Ghostty terminal.
-window-rule {
-    match app-id="ghostty"
-
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-// Enable blur behind the Zed editor.
-window-rule {
-    match app-id="dev.zed.Zed"
-
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-// Floating Shushi  window.
+// Floating Sushi  window.
 window-rule {
   match app-id="^org.gnome.NautilusPreviewer$"
+  open-floating true
+  // default-column-width { fixed 1080; }
+  // default-window-height { fixed 920; }
+}
+
+// Floating Localsend  window.
+window-rule {
+  match app-id="^org.localsend.localsend_app$"
   open-floating true
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
 }
 
-// Floating Localsend  window.
+// Floating Pavucontrol  window.
 window-rule {
-  match app-id="^localsend_app$"
+  match app-id="^org.pulseaudio.pavucontrol$"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+// Floating Nmgui  window.
+window-rule {
+  match app-id="^com.network.manager$"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+// Floating Overskride  window.
+window-rule {
+  match app-id="^io.github.kaii_lb.Overskride$"
   open-floating true
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
@@ -97,7 +90,7 @@ layer-rule {
 layer-rule {
     match namespace="noctalia-window-switcher"
     background-effect {
-        blur true
+        // blur true
         xray false
     }
 }
