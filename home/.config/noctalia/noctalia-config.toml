@@ -1,8 +1,11 @@
 [bar.default]
 background_opacity = 0.59999998658895493
 end = [ "tray", "notifications", "volume", "brightness", "battery", "control-center" ]
-margin_edge = 10
-margin_ends = 10.0
+margin_edge = 0
+margin_ends = 0
+radius = 20
+radius_top_left = 0
+radius_top_right = 0
 start = [ "workspaces" ]
 
 [config]
@@ -196,7 +199,7 @@ enabled = []
 [shell]
 app_icon_color = "primary"
 app_icon_colorize = false
-avatar_path = "/home/mitch/.face.jpg"
+avatar_path = "/home/mitch/.face.png"
 font_family = "Adwaita Sans"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
@@ -278,19 +281,19 @@ wallpaper_scheme = "m3-content"
 directory = "/home/mitch/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/.config/wallpapers/Twists and turns of Mount Hamilton.jpg"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
 [weather]
 auto_locate = true
