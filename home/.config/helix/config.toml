@@ -4,6 +4,9 @@ theme = "noctalia"
 default-yank-register = "+"
 line-number = "relative"
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 space.e = [
   ':sh rm -f /tmp/unique-file',
