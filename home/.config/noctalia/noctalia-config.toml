@@ -275,25 +275,25 @@ wallpaper_scheme = "m3-content"
         "qt",
         "starship"
     ]
-    community_ids = [ "pywalfox", "zed", "heroiclauncher", "steam", "obs", "papirus-icons", "yazi" ]
+    community_ids = [ "pywalfox", "zed", "heroiclauncher", "steam", "obs", "zellij", "papirus-icons", "yazi" ]
 
 [wallpaper]
 directory = "/home/mitch/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
+    path = "/home/mitch/.config/wallpapers/0001.png"
 
 [weather]
 auto_locate = true
