@@ -1,7 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    alias cd "z"
+    atuin init fish | source
+    zoxide init fish | source
+    starship init fish | source
+
+    alias cd z
 
     alias ls "eza --icons --color=never"
     alias ll "eza -l --icons --color=never"
@@ -37,10 +41,3 @@ set -gx EDITOR helix
 set -g fish_greeting
 
 export EDITOR="hx"
-
-if status is-interactive
-    starship init fish | source
-end
-
-# Zoxide
-zoxide init fish | source
