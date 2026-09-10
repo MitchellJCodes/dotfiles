@@ -1,0 +1,90 @@
+ls
+cd 9
+ls
+cd Documents/
+ls
+rm -rf EECE306-Main/
+rm -rf EECE306-Toolbox-starter/
+ls
+..
+ls
+exit
+ls
+hx config.nu
+exit
+hx config.nu
+exit
+ls
+hx config.nu
+exit
+ls
+hx config.nu
+ls
+bto
+btop
+bto
+btop
+open ~/.config/nushell/atuin.nu | lines | enumerate | where item =~ "name: atuin"<\n>
+open ~/.config/nushell/atuin.nu | lines | enumerate | skip 115 | first 30<\n>
+exit
+fish
+ls
+exit
+ls
+cd
+ls
+..
+ls
+cd
+ls
+btop
+ls
+cd Documents/
+ls
+..
+atuin init nu --disable-up-arrow > ~/.config/nushell/atuin.nu<\n>
+exit
+ls
+hx config.nu
+sudoedit /etc/nixos/modules/packages.nix
+sudoedit /etc/nixos/modules/desktop.nix
+sudoedit /etc/nixos/modules/users.nix
+sudo nixos rebuild switch
+sudo nixos-rebuild swtich
+sudo nixos-rebuild switch
+ff
+ls
+ff
+ls
+ff
+ls
+hx .config/nushell/config.nu
+ls
+cd Projects/
+ls
+cd Projects/
+ls
+yazi
+cd Projects/
+ls
+cd EECE306/
+ls
+git switch Main
+ls
+git switch Mitch
+ls
+fish
+ls
+eza --icons --color=never
+ls
+ff
+cd Projects/EECE306/
+ls
+eza --icons --color=never
+..
+ls
+cd nixos/
+cd modules
+ls
+sudoedit /etc/nixos/modules/users.nix
+sudo nixos-rebuild switch
