@@ -5,17 +5,11 @@ window-rule {
         draw-border-with-background false
     }
 
-// Make inactive windows semitransparent and enable blur
+// Make inactive windows semitransparent
 window-rule {
     match is-active=false
- //    background-effect {
-	//   	blur true
- //      	xray false
-	// }
-
     opacity 0.80
 }
-
 
 // Enable blur for all windows
 window-rule {
@@ -37,8 +31,6 @@ layer-rule {
 window-rule {
   match app-id="^org.gnome.NautilusPreviewer$"
   open-floating true
-  // default-column-width { fixed 1080; }
-  // default-window-height { fixed 920; }
 }
 
 // Floating Localsend  window.
@@ -57,22 +49,6 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
-// Floating Nmgui  window.
-window-rule {
-  match app-id="^com.network.manager$"
-  open-floating true
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
-}
-
-// Floating Overskride  window.
-window-rule {
-  match app-id="^io.github.kaii_lb.Overskride$"
-  open-floating true
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
-}
-
 /*
   Noctalia
   Disable xray on all our surfaces so it looks more realistic.
@@ -84,15 +60,6 @@ layer-rule {
     xray false
     // blur false
   }
-}
-
-/* Enable blur on noctalia's window switcher and disable xray. */
-layer-rule {
-    match namespace="noctalia-window-switcher"
-    background-effect {
-        // blur true
-        xray false
-    }
 }
 
 // Floating Noctalia settings window.
