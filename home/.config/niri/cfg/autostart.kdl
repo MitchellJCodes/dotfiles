@@ -3,3 +3,4 @@
     
     spawn-at-startup "noctalia"
     spawn-at-startup "swayidle" "-w" "before-sleep" "noctalia msg screen-lock"
+    spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "icon-theme" "Papirus-Dark"
