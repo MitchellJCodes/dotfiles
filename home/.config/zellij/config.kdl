@@ -674,10 +674,10 @@ show_startup_tips false
 show_release_notes false
 
 // Closing Ghostty should actually terminate Zellij
-on_force_close "quit"
+// on_force_close "quit"
 
 // Don't keep serialized sessions around
-session_serialization false
+// session_serialization false
 
 // Don't draw borders around panes
-pane_frames false
+// pane_frames false
