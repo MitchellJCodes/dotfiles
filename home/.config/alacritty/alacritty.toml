@@ -6,7 +6,8 @@ x = 10
 y = 10
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Mono" }
+# normal = { family = "JetBrainsMono Nerd Font Mono" }
+normal = { family = "Adwaita mono" }
 size = 13.0
 
 [general]
