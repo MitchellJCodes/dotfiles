@@ -8,7 +8,7 @@ binds {
     Mod+Shift+Slash                     { show-hotkey-overlay; }
 
     // ─── Applications ───
-    Mod+Return     hotkey-overlay-title="Open Terminal: Ghostty"                { spawn "ghostty"; }
+    Mod+Return     hotkey-overlay-title="Open Terminal: foot"                   { spawn "foot"; }
     Mod+B          hotkey-overlay-title="Open Browser: Firefox"                 { spawn "firefox"; }
     Mod+Shift+B    hotkey-overlay-title="Open Browser: Firefox Private"         { spawn "firefox" "-private-window"; }
 
