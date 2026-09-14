@@ -7,6 +7,7 @@ source ~/.config/nushell/zoxide.nu
 source ~/.config/nushell/atuin.nu
 
 # Aliases
+alias cd = z
 alias yeet = paru -Rns
 alias ff = fastfetch
 
