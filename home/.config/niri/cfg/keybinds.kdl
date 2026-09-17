@@ -9,8 +9,8 @@ binds {
 
     // ─── Applications ───
     Mod+Return     hotkey-overlay-title="Open Terminal: foot"                   { spawn "foot"; }
-    Mod+B          hotkey-overlay-title="Open Browser: Firefox"                 { spawn "firefox"; }
-    Mod+Shift+B    hotkey-overlay-title="Open Browser: Firefox Private"         { spawn "firefox" "-private-window"; }
+    Mod+B          hotkey-overlay-title="Open Browser: Librewolf"                 { spawn "librewolf"; }
+    Mod+Shift+B    hotkey-overlay-title="Open Browser: Librewolf Private"         { spawn "librewolf" "-private-window"; }
 
 
     Mod+Space      hotkey-overlay-title="Launcher: Toggle Application Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
