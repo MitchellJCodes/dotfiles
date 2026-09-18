@@ -54,9 +54,15 @@ auto_locate = true
 allow_empty_password = true
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1", "lockscreen-login-box@eDP-2" ]
+widget_order = [
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@eDP-2",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -184,6 +190,37 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1", 
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 576.0
+    box_width = 1152.0
+    cx = 853.5
+    cy = 437.5
+    output = "eDP-2"
+    placement_height = 1067.0
+    placement_width = 1707.0
+    rotation = -0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        clock_style = "digital"
+        font_family = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 768.0
+    box_width = 1280.0
+    cx = 1280.0
+    cy = 656.0
+    output = "HDMI-A-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = -0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        clock_style = "digital"
+
 [nightlight]
 enabled = true
 
@@ -264,6 +301,8 @@ wallpaper_scheme = "m3-content"
         "alacritty",
         "btop",
         "cava",
+        "emacs",
+        "foot",
         "gtk3",
         "gtk4",
         "ghostty",
@@ -271,29 +310,48 @@ wallpaper_scheme = "m3-content"
         "hyprland",
         "kcolorscheme",
         "kitty",
+        "labwc",
+        "mango",
         "niri",
         "qt",
-        "starship"
+        "scroll",
+        "starship",
+        "sway",
+        "umbriel",
+        "wezterm"
     ]
-    community_ids = [ "pywalfox", "zed", "heroiclauncher", "steam", "obs", "zellij", "papirus-icons", "yazi" ]
+    community_ids = [
+        "pywalfox",
+        "zen-browser",
+        "zed",
+        "heroiclauncher",
+        "steam",
+        "fastfetch",
+        "obs",
+        "zellij",
+        "papirus-icons",
+        "bat",
+        "yazi"
+    ]
 
 [wallpaper]
 directory = "/home/mitch/.config/wallpapers"
+transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/.config/wallpapers/0001.png"
+    path = "/home/mitch/.config/wallpapers/11-0-Night.jpg"
 
 [weather]
 auto_locate = true
