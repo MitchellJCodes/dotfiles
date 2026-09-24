@@ -52,6 +52,8 @@ auto_locate = true
 
 [lockscreen]
 allow_empty_password = true
+blur_intensity = 0.79999998211860657
+transition_duration = 600
 
 [lockscreen_widgets]
 enabled = true
@@ -292,6 +294,7 @@ post_hook = "pkill -SIGUSR1 nvim"
 [theme]
 builtin = "Noctalia"
 community_palette = "ADW"
+custom_palette = "11-0-night-mc"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
@@ -323,6 +326,8 @@ wallpaper_scheme = "m3-content"
     community_ids = [
         "pywalfox",
         "zen-browser",
+        "libreoffice",
+        "neovim",
         "zed",
         "heroiclauncher",
         "steam",
