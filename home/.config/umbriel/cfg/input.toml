@@ -12,6 +12,9 @@ follows_mouse = true
 [input.cursor]
 follows_focus = true
 
+[input.touchpad]
+natural_scroll = true
+
 # Confine touch input to one display.
 # [input.touch]
 # enabled = true

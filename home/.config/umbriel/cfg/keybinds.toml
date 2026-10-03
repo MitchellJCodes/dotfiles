@@ -24,6 +24,7 @@
 "Mod+Shift+E"   = { action = "spawn:noctalia msg panel-toggle launcher /emo", repeat = false }
 "Mod+Ctrl+W"    = { action = "spawn:noctalia msg wallpaper-random", repeat = false }
 "Mod+Ctrl+Q"    = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
+"Mod+Shift+D" = "spawn:noctalia msg panel-toggle prponkshe/umbriel-displays:panel"
 
 # Media controls
 "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"

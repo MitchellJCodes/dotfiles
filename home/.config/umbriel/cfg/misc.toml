@@ -40,3 +40,7 @@ action = "overview-toggle"
 [general]
 show_cheatsheet = false
 # xwayland_native_resolution = true
+
+[environment]
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+SDL_VIDEODRIVER = "wayland"
