@@ -27,13 +27,13 @@ duration_ms = 160
 curve = "easeout"
 
 [animation.windows_in]
-curve = "spring:0.85,850"
+curve = "spring:1.0,850"
 
 [animation.windows_out]
-curve = "spring:0.85,950"
+curve = "spring:1.0,950"
 
 [animation.windows_move]
-curve = "spring:0.85,900"
+curve = "spring:1.0,900"
 
 [animation.workspaces]
 curve = "spring:0.8,750"
