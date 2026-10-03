@@ -33,7 +33,7 @@ curve = "spring:0.85,850"
 curve = "spring:0.85,950"
 
 [animation.windows_move]
-curve = "spring:0.8,900"
+curve = "spring:0.85,900"
 
 [animation.workspaces]
 curve = "spring:0.8,750"
