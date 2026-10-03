@@ -1,0 +1,42 @@
+# ==============================================================================
+# Appearance
+# Blur uses a smaller radius than the built-in default.
+# https://docs.noctalia.dev/umbriel/appearance/
+# 
+[appearance]
+corner_radius = 20
+border_width = 1
+
+[appearance.blur]
+enabled = true
+passes = 3
+radius = 3
+noise = 0.02
+saturation = 1.5
+
+[appearance.shadow]
+enabled = true
+softness = 30
+offset_x = 0
+offset_y = 5
+
+[overview]
+workspace_wallpaper = false
+background_blur = false
+shortcuts = false
+
+[colors.overview]
+background_tint = "#00000000"
+workspace_background = "#00000000"
+
+[colors]
+shadow = "#00000077"
+
+[hot_corners.top_left]
+enabled = true
+delay_ms = 0
+action = "overview-toggle"
+
+[general]
+show_cheatsheet = false
+# xwayland_native_resolution = true

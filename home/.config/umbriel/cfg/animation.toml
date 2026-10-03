@@ -1,0 +1,49 @@
+# ==============================================================================
+# Effects
+# Every effect is off until a preset is selected; border and window effects
+# scale with overview zoom. Include a bundled preset (adjust /usr for the
+# package prefix), then select it by name.
+# https://docs.noctalia.dev/umbriel/effects/
+# [include]
+# files = ["/usr/share/umbriel/effects/border/pulse/effect.toml"]
+# Pools accept matching presets defined/included separately. This one-member
+# example uses the bundled pulse preset; add other border names to choose.
+# [effects.pool.borders]
+# kind = "border"
+# choose = ["pulse"]
+# selection = "unused_first" # or round_robin, random
+# Select with border = "borders" in your [effects] table.
+# Add to your existing [keybinds] table:
+# "Mod+Shift+E" = "effect-border-cycle:borders"
+# "Mod+Ctrl+E" = "effect-border-toggle"
+# "Mod+Alt+E" = "effect-border-reset"
+
+# [effects]
+# border = "pulse"
+#
+
+[animation]
+duration_ms = 125
+curve = "easeout"
+
+[animation.windows_in]
+curve = "spring:1,1800"
+
+[animation.windows_out]
+curve = "spring:1,2800"
+
+[animation.windows_move]
+curve = "spring:1,1800"
+
+[animation.workspaces]
+curve = "spring:1,1600"
+
+[animation.overview]
+curve = "spring:1,1600"
+workspace_curve = "spring:1,2000"
+
+[animation.scratchpad]
+curve = "spring:1,1600"
+
+[animation.border]
+curve = "spring:1,1800"
