@@ -25,6 +25,7 @@
 "Mod+Ctrl+W"    = { action = "spawn:noctalia msg wallpaper-random", repeat = false }
 "Mod+Ctrl+Q"    = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
 "Mod+Shift+D" = "spawn:noctalia msg panel-toggle prponkshe/umbriel-displays:panel"
+"Alt+Tab" = { action = "spawn:noctalia msg window-switcher hold", repeat = false }
 
 # Media controls
 "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
@@ -108,6 +109,7 @@
 "Mod+Ctrl+WheelDown"  = "window-focus-left"
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
 "Mod+W" = { action = "workspace-set-layout:toggle", repeat = false }
+"Mod+C" = { action = "window-center", repeat = false }
 
 # Workspaces
 "Mod+1" = "workspace-switch:1"

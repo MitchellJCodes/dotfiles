@@ -5,7 +5,7 @@
 # 
 [appearance]
 corner_radius = 20
-border_width = 1
+border_width = 2
 
 [appearance.blur]
 enabled = true

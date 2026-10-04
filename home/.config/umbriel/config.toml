@@ -5,8 +5,7 @@ files = ["noctalia.toml"]
 files = [
     "cfg/animation.toml",
     "cfg/autostart.toml",
-    "cfg/display.toml",
-    # "cfg/outputs.toml",
+    "cfg/outputs.toml",
     "cfg/input.toml",
     "cfg/keybinds.toml",
     "cfg/layout.toml",
