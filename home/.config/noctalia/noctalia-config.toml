@@ -62,6 +62,7 @@ transition_duration = 600
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@winit",
     "lockscreen-login-box@WL-1",
     "lockscreen-login-box@HDMI-A-1",
     "lockscreen-login-box@eDP-1",
@@ -145,11 +146,11 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
     box_height = 196.0
     box_width = 797.0
-    cx = 853.5
-    cy = 873.0
+    cx = 853.0
+    cy = 872.18182373046875
     output = "WL-1"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1066.0
+    placement_width = 1706.0
     rotation = 0.0
     type = "login_box"
 
@@ -199,11 +200,11 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-2"]
     box_height = 196.0
     box_width = 720.0
-    cx = 854.0
-    cy = 948.0
+    cx = 853.49981689453125
+    cy = 947.1114501953125
     output = "eDP-2"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1066.0
+    placement_width = 1706.0
     rotation = 0.0
     type = "login_box"
 
@@ -223,14 +224,41 @@ widget_order = [
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.5
+    cy = 1407.0040283203125
+    output = "winit"
+    placement_height = 1601.0
+    placement_width = 2561.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 576.0
     box_width = 1152.0
-    cx = 853.5
-    cy = 437.5
+    cx = 853.0
+    cy = 437.08984375
     output = "eDP-2"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1066.0
+    placement_width = 1706.0
     rotation = -0.0
     type = "clock"
 
@@ -263,8 +291,16 @@ background_opacity = 0.59999998658895493
 [osd]
 background_opacity = 0.59999998658895493
 
+[plugin_settings."prponkshe/umbriel-displays"]
+advanced_layer = "overlay"
+arrange_layer = "overlay"
+outputs_path = "~/.config/umbriel/cfg/outputs.toml"
+panel_layer = "overlay"
+panel_placement = "floating"
+panel_position = "center"
+
 [plugins]
-enabled = [ "nzlov/daily-wallpaper" ]
+enabled = [ "nzlov/daily-wallpaper", "prponkshe/umbriel-displays" ]
 
 [shell]
 app_icon_color = "primary"
@@ -279,7 +315,11 @@ telemetry_enabled = true
     [shell.panel]
     open_near_click_control_center = true
     open_near_click_launcher = true
+    session_position = "center"
     transparency_mode = "glass"
+
+    [shell.screenshot]
+    directory = "~/Pictures/Screenshots"
 
     [[shell.session.actions]]
     action = "lock"
@@ -316,6 +356,9 @@ telemetry_enabled = true
     enabled = true
     shortcut = "5"
     variant = "destructive"
+
+    [shell.window_switcher]
+    mru = true
 
 [templates.nvim-base16]
 input_path = "~/.config/nvim/lua/matugen-template.lua"
@@ -375,18 +418,24 @@ directory = "/home/mitch/.config/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-09-28.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-09-28.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-09-28.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+
+    [wallpaper.monitors.WL-1]
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-2]
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+
+    [wallpaper.monitors.winit]
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-09-28.jpg"
 
 [weather]
@@ -399,9 +448,3 @@ enabled = true
 [widget.control-center]
 enabled = true
 glyph = "power"
-
-[widget.mpvpaper]
-type = "noctalia/mpvpaper:mpvpaper"
-
-[widget.wallhaven]
-type = "noctalia/wallhaven:wallhaven"
