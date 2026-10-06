@@ -10,7 +10,8 @@
 
 # Applications and session
 "Mod+Return" = { action = "spawn:foot", repeat = false }
-"Mod+E" = { action = "spawn:nautilus", repeat = false }
+# "Mod+E" = { action = "spawn:nautilus", repeat = false }
+"Mod+E" = { action = "spawn:nautilus --new-window", repeat = false }
 "Mod+B"      = { action = "spawn:librewolf", repeat = false }
 "Mod+Shift+B"      = { action = "spawn:librewolf -private-window", repeat = false }
 "Mod+Q" = { action = "window-close", repeat = false }
@@ -44,65 +45,68 @@
 "Mod+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 "Mod+Shift+P" = "dpms-off"
 
-# Focus and movement
-"Mod+Left"  = "window-focus-or-output-left"
-"Mod+Right" = "window-focus-or-output-right"
-"Mod+Up"    = "window-focus-or-workspace-up"
-"Mod+Down"  = "window-focus-or-workspace-down"
-"Mod+H" = "window-focus-or-output-left"
-"Mod+L" = "window-focus-or-output-right"
-"Mod+K" = "window-focus-or-workspace-up"
-"Mod+J" = "window-focus-or-workspace-down"
+#Focus and movement
+"Mod+Left" = { action = "window-focus-or-output-left", repeat = false }
+"Mod+Right" = { action = "window-focus-or-output-right", repeat = false }
+"Mod+Up" = { action = "window-focus-or-workspace-up", repeat = false }
+"Mod+Down" = { action = "window-focus-or-workspace-down", repeat = false }
+"Mod+H" = { action = "window-focus-or-output-left", repeat = false }
+"Mod+L" = { action = "window-focus-or-output-right", repeat = false }
+"Mod+K" = { action = "window-focus-or-workspace-up", repeat = false }
+"Mod+J" = { action = "window-focus-or-workspace-down", repeat = false }
 
-"Mod+Shift+Left"  = "window-move-or-output-left"
-"Mod+Shift+Down"  = "window-move-or-workspace-down"
-"Mod+Shift+Up"    = "window-move-or-workspace-up"
-"Mod+Shift+Right" = "window-move-or-output-right"
-"Mod+Shift+H" = "window-move-or-output-left"
-"Mod+Shift+J" = "window-move-or-workspace-down"
-"Mod+Shift+K" = "window-move-or-workspace-up"
-"Mod+Shift+L" = "window-move-or-output-right"
+"Mod+Shift+Left" = { action = "window-move-or-output-left", repeat = false }
+"Mod+Shift+Down" = { action = "window-move-or-workspace-down", repeat = false }
+"Mod+Shift+Up" = { action = "window-move-or-workspace-up", repeat = false }
+"Mod+Shift+Right" = { action = "window-move-or-output-right", repeat = false }
+"Mod+Shift+H" = { action = "window-move-or-output-left", repeat = false }
+"Mod+Shift+J" = { action = "window-move-or-workspace-down", repeat = false }
+"Mod+Shift+K" = { action = "window-move-or-workspace-up", repeat = false }
+"Mod+Shift+L" = { action = "window-move-or-output-right", repeat = false }
 
-"Mod+Shift+Ctrl+Left"  = "window-move-to-output-left"
-"Mod+Shift+Ctrl+Down"  = "window-move-to-output-down"
-"Mod+Shift+Ctrl+Up"    = "window-move-to-output-up"
-"Mod+Shift+Ctrl+Right" = "window-move-to-output-right"
-"Mod+Shift+Ctrl+H" = "window-move-to-output-left"
-"Mod+Shift+Ctrl+J" = "window-move-to-output-down"
-"Mod+Shift+Ctrl+K" = "window-move-to-output-up"
-"Mod+Shift+Ctrl+L" = "window-move-to-output-right"
+"Mod+Shift+Ctrl+Left" = { action = "window-move-to-output-left", repeat = false }
+"Mod+Shift+Ctrl+Down" = { action = "window-move-to-output-down", repeat = false }
+"Mod+Shift+Ctrl+Up" = { action = "window-move-to-output-up", repeat = false }
+"Mod+Shift+Ctrl+Right" = { action = "window-move-to-output-right", repeat = false }
+"Mod+Shift+Ctrl+H" = { action = "window-move-to-output-left", repeat = false }
+"Mod+Shift+Ctrl+J" = { action = "window-move-to-output-down", repeat = false }
+"Mod+Shift+Ctrl+K" = { action = "window-move-to-output-up", repeat = false }
+"Mod+Shift+Ctrl+L" = { action = "window-move-to-output-right", repeat = false }
 
-"Mod+Ctrl+Left"  = "output-focus-left"
-"Mod+Ctrl+Right" = "output-focus-right"
-"Mod+Ctrl+Up"    = "workspace-previous"
-"Mod+Ctrl+Down"  = "workspace-next"
-"Mod+Ctrl+H" = "output-focus-left"
-"Mod+Ctrl+L" = "output-focus-right"
-"Mod+Ctrl+K" = "workspace-previous"
-"Mod+Ctrl+J" = "workspace-next"
+"Mod+Ctrl+Left" = { action = "output-focus-left", repeat = false }
+"Mod+Ctrl+Right" = { action = "output-focus-right", repeat = false }
+"Mod+Ctrl+Up" = { action = "workspace-previous", repeat = false }
+"Mod+Ctrl+Down" = { action = "workspace-next", repeat = false }
+"Mod+Ctrl+H" = { action = "output-focus-left", repeat = false }
+"Mod+Ctrl+L" = { action = "output-focus-right", repeat = false }
+"Mod+Ctrl+K" = { action = "workspace-previous", repeat = false }
+"Mod+Ctrl+J" = { action = "workspace-next", repeat = false }
 
-"Mod+Minus"       = "window-modify-primary-extent:-0.1"
-"Mod+Equal"       = "window-modify-primary-extent:0.1"
-"Mod+Shift+Minus" = "window-modify-secondary-extent:-0.1"
-"Mod+Shift+Equal" = "window-modify-secondary-extent:0.1"
+"Mod+Minus" = { action = "window-modify-primary-extent:-0.1", repeat = false }
+"Mod+Equal" = { action = "window-modify-primary-extent:0.1", repeat = false }
+"Mod+Shift+Minus" = { action = "window-modify-secondary-extent:-0.1", repeat = false }
+"Mod+Shift+Equal" = { action = "window-modify-secondary-extent:0.1", repeat = false }
 
-"Mod+Home"     = "column-focus-first"
-"Mod+End"      = "column-focus-last"
-"Mod+Ctrl+Home" = "column-move-to-first"
-"Mod+Ctrl+End"  = "column-move-to-last"
+"Mod+Home" = { action = "column-focus-first", repeat = false }
+"Mod+End" = { action = "column-focus-last", repeat = false }
+"Mod+Ctrl+Home" = { action = "column-move-to-first", repeat = false }
+"Mod+Ctrl+End" = { action = "column-move-to-last", repeat = false }
 
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
 "Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
-"Mod+F" = "window-set-primary-extent:1.0"
+"Mod+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+Shift+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
-"Mod+R" = "window-cycle-primary-extent"
-"Mod+Shift+R" = "window-cycle-primary-extent-back"
-"Mod+BracketLeft"  = "window-consume-or-expel-left"
-"Mod+BracketRight" = "window-consume-or-expel-right"
+
+"Mod+R" = { action = "window-cycle-primary-extent", repeat = false }
+"Mod+Shift+R" = { action = "window-cycle-primary-extent-back", repeat = false }
+"Mod+Ctrl+R" = { action = "window-cycle-secondary-extent", repeat = false }
+"Mod+Ctrl+Shift+R" = { action = "window-cycle-secondary-extent-back", repeat = false }
+"Mod+BracketLeft" = { action = "window-consume-or-expel-left", repeat = false }
+"Mod+BracketRight" = { action = "window-consume-or-expel-right", repeat = false }
 "Mod+WheelUp"   = { action = "workspace-previous", cooldown_ms = 150 }
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
 "Mod+Ctrl+WheelUp" = "window-focus-right"

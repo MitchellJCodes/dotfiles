@@ -10,10 +10,14 @@ numlock_toggle = true
 follows_mouse = true
 
 [input.cursor]
+theme = "Bibata-Modern-Ice"
+size = 24
 follows_focus = true
+hardware_cursor = true
 
 [input.touchpad]
 natural_scroll = true
+disable_while_typing = true
 
 # Confine touch input to one display.
 # [input.touch]
