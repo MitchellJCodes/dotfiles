@@ -11,6 +11,11 @@ radius_top_left = 0
 radius_top_right = 0
 start = [ "workspaces" ]
 
+[brightness]
+enable_ddcutil = true
+minimum_brightness = 0.0099999997764825821
+sync_all_monitors = true
+
 [config]
 
 [desktop_widgets]
@@ -407,6 +412,7 @@ wallpaper_scheme = "m3-content"
         "steam",
         "fastfetch",
         "obs",
+        "thunderbird",
         "zellij",
         "papirus-icons",
         "bat",
@@ -418,13 +424,13 @@ directory = "/home/mitch/.config/wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-10.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-10.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-10.jpg"
 
     [wallpaper.monitors.WL-1]
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
@@ -433,7 +439,7 @@ transition_on_startup = true
     path = "/home/mitch/.config/wallpapers/0001.png"
 
     [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-04.jpg"
+    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-10-10.jpg"
 
     [wallpaper.monitors.winit]
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-09-28.jpg"
@@ -448,3 +454,9 @@ enabled = true
 [widget.control-center]
 enabled = true
 glyph = "power"
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
