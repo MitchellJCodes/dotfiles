@@ -10,22 +10,21 @@
 
 # Applications and session
 "Mod+Return" = { action = "spawn:foot", repeat = false }
-# "Mod+E" = { action = "spawn:nautilus", repeat = false }
-"Mod+E" = { action = "spawn:nautilus --new-window", repeat = false }
-"Mod+B"      = { action = "spawn:librewolf", repeat = false }
-"Mod+Shift+B"      = { action = "spawn:librewolf -private-window", repeat = false }
+"Mod+E" = { action = "spawn:thunar", repeat = false }
+"Mod+B" = { action = "spawn:librewolf", repeat = false }
+"Mod+Shift+B" = { action = "spawn:librewolf -private-window", repeat = false }
 "Mod+Q" = { action = "window-close", repeat = false }
 
-"Mod+Space"     = { action = "spawn:noctalia msg panel-toggle launcher", repeat = false }
-"Mod+S"         = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
-"Mod+Comma"     = { action = "spawn:noctalia msg settings-toggle", repeat = false }
-"Mod+Ctrl+B"    = { action = "spawn:noctalia msg bar-toggle", repeat = false }
-"Mod+V"         = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
-"Mod+Shift+W"   = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
-"Mod+Shift+E"   = { action = "spawn:noctalia msg panel-toggle launcher /emo", repeat = false }
-"Mod+Ctrl+W"    = { action = "spawn:noctalia msg wallpaper-random", repeat = false }
-"Mod+Ctrl+Q"    = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
-"Mod+Shift+D" = "spawn:noctalia msg panel-toggle prponkshe/umbriel-displays:panel"
+"Mod+Space" = { action = "spawn:noctalia msg panel-toggle launcher", repeat = false }
+"Mod+S" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
+"Mod+Comma" = { action = "spawn:noctalia msg settings-toggle", repeat = false }
+"Mod+Ctrl+B" = { action = "spawn:noctalia msg bar-toggle", repeat = false }
+"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
+"Mod+Shift+W" = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
+"Mod+Shift+E" = { action = "spawn:noctalia msg panel-toggle launcher /emo", repeat = false }
+"Mod+Ctrl+W" = { action = "spawn:noctalia msg wallpaper-random", repeat = false }
+"Mod+Ctrl+Q" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
+"Mod+D" = { action = "spawn:noctalia msg panel-toggle prponkshe/umbriel-displays:panel", repeat = false }
 "Alt+Tab" = { action = "spawn:noctalia msg window-switcher hold", repeat = false }
 
 # Media controls
@@ -111,6 +110,8 @@
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
 "Mod+Ctrl+WheelUp" = "window-focus-right"
 "Mod+Ctrl+WheelDown"  = "window-focus-left"
+"Mod+Shift+WheelUp" = { action = "window-move-or-workspace-up", cooldown_ms = 150 }
+"Mod+Shift+WheelDown" = { action = "window-move-or-workspace-down", cooldown_ms = 150 }
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
 "Mod+W" = { action = "workspace-set-layout:toggle", repeat = false }
 "Mod+C" = { action = "window-center", repeat = false }
@@ -136,11 +137,12 @@
 "Mod+Shift+9" = "window-move-to-workspace:9"
 
 # Scratchpad
-# "Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
-# "Mod+Space" = "scratchpad-toggle"
-# "Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
-# "Mod+Tab" = "scratchpad-focus-next"
-#
+"Mod+Shift+N" = { action = "window-move-to-scratchpad", repeat = false }
+"Mod+N" = "scratchpad-toggle"
+"Mod+Ctrl+N" = { action = "window-restore-from-scratchpad", repeat = false }
+"Mod+Alt+N" = "scratchpad-focus-next"
+
+# Screenshots
 "Print" = "spawn:noctalia msg screenshot-region"
 "Ctrl+Shift+1" = "spawn:noctalia msg screenshot-region"
 "Ctrl+Shift+2" = "spawn:noctalia msg screenshot-fullscreen pick"

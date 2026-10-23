@@ -1,10 +1,5 @@
-# ==============================================================================
-# Window rules
-# Rules combine in order, with later values overriding earlier ones.
 # https://docs.noctalia.dev/umbriel/window-rules/
-
-# Blur windows using the non-optimized path so translucent windows include
-# overlapping windows behind them.
+# https://docs.noctalia.dev/umbriel/layer-rules/
 [[window_rule]]
 blur = true
 blur_optimized = false
@@ -54,9 +49,7 @@ default_maximize = false
 match.is_focused = false
 opacity = 0.8
 
-# ==============================================================================
 # Layer rules
-# https://docs.noctalia.dev/umbriel/layer-rules/
 [[layer_rule]]
 match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
 blur = true

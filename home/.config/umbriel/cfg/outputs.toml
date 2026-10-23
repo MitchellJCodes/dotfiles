@@ -11,7 +11,7 @@ min_workspaces = 1
 
 [output."Thermotrex Corporation TL140ADXP02-0 Unknown"]
 mode = "2560x1600@165.002"
-position = [0, 0]
+position = [2560, 0]
 scale = 1.5
 vrr = "always"
 tearing = true

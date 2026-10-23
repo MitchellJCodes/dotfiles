@@ -1,6 +1,3 @@
-# ==============================================================================
-# Input
-# Enable NumLock when a physical keyboard connects.
 # https://docs.noctalia.dev/umbriel/input/
 [input.keyboard]
 numlock_toggle = true
@@ -19,8 +16,4 @@ hide_when_typing = true
 [input.touchpad]
 natural_scroll = true
 disable_while_typing = true
-
-# Confine touch input to one display.
-# [input.touch]
-# enabled = true
-# map_to_output = "eDP-1"
+accel_profile = "adaptive"
