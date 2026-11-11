@@ -5,8 +5,8 @@ files = ["noctalia.toml"]
 files = [
     "cfg/animation.toml",
     "cfg/autostart.toml",
-    # "cfg/display.toml",
     "cfg/outputs.toml",
+    # "cfg/display.toml",
     "cfg/input.toml",
     "cfg/keybinds.toml",
     "cfg/layout.toml",
@@ -18,7 +18,6 @@ files = [
 [overview]
 workspace_wallpaper = false
 background_blur = false
-
 
 [colors.overview]
 background_tint = "#00000000"

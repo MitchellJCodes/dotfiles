@@ -6,6 +6,10 @@ border_width = 2
 outer_border_width = 0
 drag_opacity = 0.75
 
+[appearance.title_bar]
+mode = "off"
+# mode = "on"
+
 [appearance.blur]
 enabled = true
 passes = 3

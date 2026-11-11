@@ -1,26 +1,27 @@
 # https://docs.noctalia.dev/umbriel/effects/
 [animation]
-duration_ms = 160
-curve = "easeout"
+enabled = true
+# duration_ms = 160
+# curve = "easeout"
 
-[animation.windows_in]
-curve = "spring:1.0,850"
+# [animation.windows_in]
+# curve = "spring:1.0,850"
 
-[animation.windows_out]
-curve = "spring:1.0,950"
+# [animation.windows_out]
+# curve = "spring:1.0,950"
 
-[animation.windows_move]
-curve = "spring:1.0,900"
+# [animation.windows_move]
+# curve = "spring:1.0,900"
 
-[animation.workspaces]
-curve = "spring:0.8,750"
+# [animation.workspaces]
+# curve = "spring:0.8,750"
 
-[animation.overview]
-curve = "spring:0.8,750"
-workspace_curve = "spring:0.85,850"
+# [animation.overview]
+# curve = "spring:0.8,750"
+# workspace_curve = "spring:0.85,850"
 
-[animation.scratchpad]
-curve = "spring:0.8,800"
+# [animation.scratchpad]
+# curve = "spring:0.8,800"
 
-[animation.border]
-curve = "spring:0.85,900"
+# [animation.border]
+# curve = "spring:0.85,900"

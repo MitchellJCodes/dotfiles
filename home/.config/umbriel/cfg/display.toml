@@ -1,18 +1,13 @@
-# Outputs are machine-specific. Run `umbriel outputs` to find names and modes.
-# https://docs.noctalia.dev/umbriel/outputs/
-
-[output."AOC Q27G1WG4 0x00006800"]
-mode = "2560x1440@143.912"
+[output."Samsung Electric Company LS27HG55x H4CL825037"]
 position = [0, 0]
-vrr = "disabled"
-tearing = true
+scale = 1
+vrr = "fullscreen"
+hdr = "auto"
 min_workspaces = 1
 
 [output."Thermotrex Corporation TL140ADXP02-0 Unknown"]
-mode = "2560x1600@165.002"
-position = [2560, 373]
-scale = 1.5
+position = [2560, 160]
+scale = 1.6
 vrr = "always"
-tearing = true
 hdr = "auto"
 min_workspaces = 1
