@@ -1,0 +1,9 @@
+[opener]
+edit = [{ run = "hx %s", block = true, for = "unix" }]
+
+play = [
+    { run = "mpv %s", orphan = true, for = "unix" },
+]
+open = [{ run = "xdg-open %s1", desc = "Open" }]
+[open]
+prepend_rules = [{ mime = "text/*", use = "edit" }]
