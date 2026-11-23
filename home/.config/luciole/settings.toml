@@ -1,0 +1,7 @@
+schema_version = 1
+
+[browser]
+chooser_view_mode = "grid"
+show_drives = false
+show_preview = false
+view_mode = "grid"
