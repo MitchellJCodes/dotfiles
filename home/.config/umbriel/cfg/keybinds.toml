@@ -5,10 +5,14 @@
 
 # Applications and session
 "Mod+Return" = { action = "spawn footclient", repeat = false }
-"Mod+E" = { action = "spawn nautilus --new-window", repeat = false }
+"Mod+E" = { action = "spawn luciole", repeat = false }
+"Mod+Q" = { action = "window-close", repeat = false }
+
 "Mod+B" = { action = "spawn librewolf", repeat = false }
 "Mod+Shift+B" = { action = "spawn librewolf -private-window", repeat = false }
-"Mod+Q" = { action = "window-close", repeat = false }
+
+# "Mod+B" = { action = "spawn firefox", repeat = false }
+# "Mod+Shift+B" = { action = "spawn firefox -private-window", repeat = false }
 
 "Mod+Space" = { action = "spawn noctalia msg panel-toggle launcher", repeat = false }
 "Mod+S" = { action = "spawn noctalia msg panel-toggle control-center", repeat = false }

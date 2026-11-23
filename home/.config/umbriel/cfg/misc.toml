@@ -24,13 +24,7 @@ offset_x = 0
 offset_y = 5
 
 [overview]
-workspace_wallpaper = false
-background_blur = false
-shortcuts = false
-
-[colors.overview]
-background_tint = "#00000000"
-workspace_background = "#00000000"
+shortcuts = true
 
 [colors]
 shadow = "#00000077"

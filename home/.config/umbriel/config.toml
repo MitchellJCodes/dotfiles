@@ -15,10 +15,9 @@ files = [
 ]
 
 # Override overview colors
-[overview]
-workspace_wallpaper = false
-background_blur = false
-
-[colors.overview]
-background_tint = "#00000000"
-workspace_background = "#00000000"
+# [overview]
+# workspace_wallpaper = false
+# background_blur = false
+# [colors.overview]
+# background_tint = "#00000000"
+# workspace_background = "#00000000"
