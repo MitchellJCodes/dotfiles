@@ -664,8 +664,8 @@ web_client {
 // Theme
 theme "noctalia"
 
-// Default shell for new panes
-default_shell "fish"
+// Default shell
+default_shell "nu"
 
 // Don't show the startup help
 show_startup_tips false
