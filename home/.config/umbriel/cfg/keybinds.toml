@@ -5,6 +5,8 @@
 
 # Applications and session
 "Mod+Return" = { action = "spawn footclient", repeat = false }
+# "Mod+Return" = { action = "spawn ghostty", repeat = false }
+
 "Mod+E" = { action = "spawn luciole", repeat = false }
 "Mod+Q" = { action = "window-close", repeat = false }
 

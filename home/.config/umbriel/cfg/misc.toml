@@ -9,6 +9,8 @@ drag_opacity = 0.75
 [appearance.title_bar]
 mode = "off"
 # mode = "on"
+button_position = "left"
+title_align = "center"
 
 [appearance.blur]
 enabled = true
