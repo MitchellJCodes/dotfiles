@@ -314,7 +314,7 @@ widget_order = [
     box_height = 576.0
     box_width = 1152.0
     cx = 800.0
-    cy = 410.0279541015625
+    cy = 410.02798461914062
     output = "eDP-2"
     placement_height = 1000.0
     placement_width = 1600.0
@@ -511,16 +511,18 @@ wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "/home/mitch/.config/wallpapers"
+directory_dark = "/home/mitch/.config/wallpapers/Dark"
+directory_light = "/home/mitch/.config/wallpapers/Light"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-23.jpg"
+    path = "/home/mitch/.config/wallpapers/Dark/daily-wallpaper/bing-en-us-2026-11-25.jpg"
 
     [wallpaper.last]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-23.jpg"
+    path = "/home/mitch/.config/wallpapers/Dark/daily-wallpaper/bing-en-us-2026-11-25.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-22.jpg"
+    path = "/home/mitch/.config/wallpapers/Dark/daily-wallpaper/bing-en-us-2026-11-25.jpg"
 
     [wallpaper.monitors.WL-1]
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-22.jpg"
@@ -529,7 +531,7 @@ transition_on_startup = true
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-12.jpg"
 
     [wallpaper.monitors.eDP-2]
-    path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-23.jpg"
+    path = "/home/mitch/.config/wallpapers/Dark/daily-wallpaper/bing-en-us-2026-11-25.jpg"
 
     [wallpaper.monitors.winit]
     path = "/home/mitch/.config/wallpapers/daily-wallpaper/bing-en-us-2026-11-13.jpg"
